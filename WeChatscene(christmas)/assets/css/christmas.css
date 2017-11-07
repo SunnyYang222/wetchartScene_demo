@@ -1,0 +1,629 @@
+
+html{
+    font-size:31.25vw;
+}
+body{
+    font:12px/1.4 'Microsoft Yahei',Tahoma,Helvetica,Arial,sans-serif;
+}
+html,body,.swiper-container,.swiper-slide{
+    width:100%;
+    height:100%;
+}
+a{text-decoration:none;color:#fff;}
+ul,ol,li{
+    list-style: none;
+}
+*{margin:0;padding:0;}
+
+.music {
+    z-index: 3;
+    position: absolute;
+    top:.15rem;
+    background: url(../imgs/music.png) no-repeat;
+    background-size: contain;
+    width: .30rem;
+    height: .30rem;
+    animation: circleMusic 2s linear infinite;
+    -webkit-animation: circleMusic 2s linear infinite;
+
+}
+@keyframes circleMusic {
+    to {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+    }
+    from {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes circleMusic {
+    to {
+        transform: rotate(0deg);-webkit-transform: rotate(0deg);
+    }
+    from {
+        transform: rotate(360deg);-webkit-transform: rotate(360deg);
+    }
+}
+
+.play {
+    z-index: 2;
+    position: absolute;
+    top:1%;
+    right:1%;
+    width: .44rem;
+    height: .44rem;
+    background: url("../imgs/music.gif") no-repeat;
+    background-size:contain;
+}
+.no-play{
+    z-index: 2;
+    position: absolute;
+    top:1%;
+    right:1%;
+    width: .44rem;
+    height: .44rem;
+}
+.swiper-container-vertical > .swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 5px auto;
+    display: block;
+}
+.swiper-pagination-bullet {
+    margin: 5px auto;
+    background-color: #f9f9f9;
+    width:.06rem;
+    height:.06rem;
+}
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+.swiper-slide{
+    background-size: cover;
+}
+.swiper-slide>div{
+	position: absolute;
+}
+.swiper-slide>div img{
+    width:100%;
+    height:100%;
+}
+.slide1{
+    background-image: url(../imgs/chrs1.png);
+}
+.slide2{
+    background-image: url(../imgs/chrs2.png);
+}
+.slide3{
+    background-image: url(../imgs/chrs3.png);
+}
+.slide4{
+    background-image: url(../imgs/chrs4.png);
+    background-position: 21%;
+}
+.slide5{
+    background-image: url(../imgs/chrs5.png);
+}
+@-webkit-keyframes logo-zoomOut {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(2, 2, 2);
+        transform: scale3d(2, 2,2)
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1)
+    }
+}
+@keyframes logo-zoomOut {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(2, 2, 2);
+        transform: scale3d(2, 2,2)
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1)
+    }
+}
+.logo-zoomOut{
+    -webkit-animation-name: logo-zoomOut;
+    animation-name: logo-zoomOut;
+}
+/*slide1*/
+/*正转180*/
+@keyframes rotateZ-half{
+	0% {
+		opacity: 0;
+		filter: alpha(opacity=0);
+		-webkit-transform: rotate(-180deg);
+		transform: rotate(-180deg);
+	}
+	100% {
+		opacity: 1;
+		filter: alpha(opacity=100);
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+}
+@-webkit-keyframes rotateZ-half{
+	0% {
+		opacity: 0;
+		filter: alpha(opacity=0);
+		-webkit-transform: rotate(-180deg);
+		transform: rotate(-180deg);
+	}
+	100% {
+		opacity: 1;
+		filter: alpha(opacity=100);
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+}
+.rotateZ-half{
+	animation-name:rotateZ-half;
+	-webkit-animation-name:rotateZ-half;
+	animation-iteration-count:infinite;
+    -webkit-animation-iteration-count:infinite;
+}
+/*反转180*/
+@keyframes rotateZ-halfReverse{
+    0% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        -webkit-transform: rotate(-180deg);
+        transform: rotate(-180deg);
+    }
+}
+@-webkit-keyframes rotateZ-halfReverse{
+    0% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        -webkit-transform: rotate(-180deg);
+        transform: rotate(-180deg);
+    }
+}
+.rotateZ-halfReverse{
+    animation-name:rotateZ-halfReverse;
+    -webkit-animation-name:rotateZ-halfReverse;
+    animation-iteration-count:infinite;
+    -webkit-animation-iteration-count:infinite;
+}
+.ch1-02{
+	width: 16.05263157894737%;
+    height: 11.361737677527152%;
+    left: -3.684210526315789%;
+    top: 0%;
+    z-index: 0;
+	/*animation: rotateZ-half 2s 0.5s infinite both;*/
+}
+.ch1-03{
+	width: 12.894736842105264%;
+    height: 8.270676691729323%;
+    left: 73.28947368421052%;
+    top: 14.786967418546364%;
+    z-index: 0;
+}
+.ch1-04{
+	width: 22.36842105263158%;
+    height: 14.703425229741022%;
+    left: 33.15789473684211%;
+    top: 13.199665831244777%;
+    z-index: 0;
+}
+.ch1-05{
+	width: 13.026315789473683%;
+    height: 8.10359231411863%;
+    left: 86.18421052631578%;
+    top: 7.268170426065162%;
+    z-index: 0;
+}
+.ch1-06{
+	width: 17.63157894736842%;
+    height: 10.526315789473685%;
+    left: 28.421052631578945%;
+    top: 1.2531328320802007%;
+    z-index: 0;
+}
+.ch1-07{
+	width: 6.578947368421054%;
+    height: 4.344193817878029%;
+    left: 17.105263157894736%;
+    top: 8.85547201336675%;
+    z-index: 0;
+}
+.ch1-08{
+	width: 11.315789473684209%;
+    height: 6.432748538011696%;
+    left: 60.921052631578945%;
+    top: 8.939014202172098%;
+    z-index: 0;
+}
+.ch1-09{
+	width: 12.105263157894736%;
+    height: 6.9340016708437755%;
+    left: 52.76315789473684%;
+    top: -2.3391812865497075%;
+    z-index: 0;
+}
+.ch1-10{
+	width: 9.473684210526315%;
+    height: 5.847953216374268%;
+    left: 79.47368421052632%;
+    top: 0.6683375104427736%;
+    z-index: 0;
+}
+.ch1-11{
+	width: 15.263157894736842%;
+    height: 9.85797827903091%;
+    left: 4.4243421052631575%;
+    top: 13.400199718045114%;
+    z-index: 0;
+}
+.ch1-12{
+	width: 75.52631578947368%;
+    height: 12.614870509607352%;
+    left: 13.421052631578947%;
+    top: 54.21888053467%;
+    z-index: 0;
+}
+.ch1-13{
+	width: 48.94736842105263%;
+    height: 27.652464494569763%;
+    left: 43.68421052631579%;
+    top: 35.00417710944027%;
+    z-index: 0;
+}
+.ch1-14{
+	width: 41.71052631578947%;
+    height: 26.31578947368421%;
+    left: 5.921052631578947%;
+    top: 36.6750208855472%;
+    z-index: 0;
+}
+.ch1-15{
+	width: 51.973684210526315%;
+    height: 46.950710108604845%;
+    left: 24.066354851973664%;
+    top: 19.89364687761068%;
+    z-index: 0;
+}
+.ch1-16{
+	width: 94.07894736842104%;
+    height: 43.94319131161237%;
+    left: 2.631578947368421%;
+    top: 60.56808688387635%;
+    z-index: 0;
+}
+.ch1-17{
+	width: 12.894736842105264%;
+    height: 12.614870509607352%;
+    left: 25.39473684210526%;
+    top: 56.55806182121971%;
+    z-index: 0;
+}
+.ch1-18{
+	width: 19.210526315789473%;
+    height: 8.688387635756058%;
+    left: 45.921052631578945%;
+    top: 58.31244778613199%;
+    z-index: 0;
+}
+/*slide2*/
+.ch2-01{
+    width: 100%;
+    height: 43.69256474519633%;
+    left: 0%;
+    top: -0.2506265664160401%;
+    z-index: 0;
+    animation-iteration-count:infinite;
+    -webkit-animation-iteration-count:infinite;
+}
+.ch2-02{
+    width: 100%;
+    height: 81.28654970760235%;
+    left: 0.2631578947368421%;
+    top: 15.121136173767754%;
+    z-index: 0;
+}
+.ch2-03{
+    width: 100%;
+    height: 71.59565580618212%;
+    left: 0%;
+    top: 19.966583124477864%;
+    z-index: 0;
+}
+.ch2-04{
+    width: 111.56250000000001%;
+    height: 100.79365079365078%;
+    left: -5.9375%;
+    top: 5.357142857142857%;
+    z-index: 0;
+}
+.ch2-05{
+    width: 70.39473684210526%;
+    height: 33.16624895572264%;
+    left: 32.142783717105274%;
+    top: 66.86589520676692%;
+    z-index: 0;
+}
+.ch2-06{
+    width: 58.4375%;
+    height: 33.92857142857143%;
+    left: 52.18344838995683%;
+    top: 27.80038487841512%;
+    z-index: 0;
+    animation-iteration-count: 3;
+    -webkit-animation-iteration-count: 3;
+}
+.ch2-06 img{
+    transform: rotate(57deg);
+    -webkit-transform: rotate(57deg);
+}
+@keyframes zoomShake {
+    0% {
+        -webkit-transform: scale3d(1,1,1);
+        transform: scale3d(1,1,1);
+    }
+    10%, 20% {
+        -webkit-transform: scale3d(.9,.9,.9) rotate3d(0,0,1,-3deg);
+        transform: scale3d(.9,.9,.9) rotate3d(0,0,1,-3deg);
+    }
+    30%, 50%, 70%, 90% {
+        -webkit-transform: scale3d(1.1,1.1,1.1) rotate3d(0,0,1,3deg);
+        transform: scale3d(1.1,1.1,1.1) rotate3d(0,0,1,3deg);
+    }
+    40%, 60%, 80% {
+        -webkit-transform: scale3d(1.1,1.1,1.1) rotate3d(0,0,1,-3deg);
+        transform: scale3d(1.1,1.1,1.1) rotate3d(0,0,1,-3deg);
+    }
+    100% {
+        -webkit-transform: scale3d(1,1,1);
+        transform: scale3d(1,1,1);
+    }
+}
+@-webkit-keyframes zoomShake {
+    0% {
+        -webkit-transform: scale3d(1,1,1);
+        transform: scale3d(1,1,1);
+    }
+    10%, 20% {
+        -webkit-transform: scale3d(.9,.9,.9) rotate3d(0,0,1,-3deg);
+        transform: scale3d(.9,.9,.9) rotate3d(0,0,1,-3deg);
+    }
+    30%, 50%, 70%, 90% {
+        -webkit-transform: scale3d(1.1,1.1,1.1) rotate3d(0,0,1,3deg);
+        transform: scale3d(1.1,1.1,1.1) rotate3d(0,0,1,3deg);
+    }
+    40%, 60%, 80% {
+        -webkit-transform: scale3d(1.1,1.1,1.1) rotate3d(0,0,1,-3deg);
+        transform: scale3d(1.1,1.1,1.1) rotate3d(0,0,1,-3deg);
+    }
+    100% {
+        -webkit-transform: scale3d(1,1,1);
+        transform: scale3d(1,1,1);
+    }
+}
+.zoomShake{
+    animation-name: zoomShake;
+    -webkit-animation-name: zoomShake;
+}
+.text{
+    position:absolute;
+    font-size: 16px;
+    color: rgb(217, 41, 64);
+}
+.text span{
+    display: block;
+    width: 100%;
+    height: 100%;
+    transform:rotate(-10deg);
+    -webkit-transform:rotate(-10deg);
+}
+.text1{
+    width: 6.875000000000001%;
+    height: auto;
+    left: 53.15673828125001%;
+    top: 75.2621802869397%;
+    z-index: 0;
+}
+.text2{
+    width: 7.8125%;
+    height: auto;
+    left: 62.767783717105274%;
+    top: 72.72517651244812%;
+    z-index: 0;
+}
+/*.slide3*/
+.slide3 .text{
+    color:#fff;
+    font-size:18px;
+    width: 56.25%;
+    height: auto;
+    left: 31.005088404605274%;
+    top: 11.30952380952381%;
+    z-index: 1;
+}
+.ch3-01{
+    width: 33.68421052631579%;
+    height: 18.546365914786968%;
+    left: 13.421052631578947%;
+    top: 47.284878863826236%;
+    z-index: 0;
+}
+.ch3-02{
+    width: 34.078947368421055%;
+    height: 25.396825396825395%;
+    left: 25.263157894736842%;
+    top: 31.495405179615705%;
+    z-index: 0;
+}
+.ch3-03{
+    width: 24.473684210526315%;
+    height: 17.7109440267335%;
+    left: 9.342105263157894%;
+    top: 56.55806182121971%;
+    z-index: 0;
+}
+.ch3-04{
+    width: 40.78947368421052%;
+    height: 23.558897243107772%;
+    left: 46.31578947368421%;
+    top: 39.18128654970761%;
+    z-index: 0;
+}
+.ch3-05{
+    width: 25%;
+    height: 12.280701754385964%;
+    left: 68.02631578947368%;
+    top: 59.64912280701755%;
+    z-index: 0;
+}
+.ch3-06{
+    width: 24.210526315789473%;
+    height: 15.873015873015872%;
+    left: 18.026315789473685%;
+    top: 71.09440267335005%;
+    z-index: 0;
+}
+.ch3-07{
+    width: 29.078947368421055%;
+    height: 18.880534670008355%;
+    left: 63.94736842105263%;
+    top: 67.50208855472013%;
+    z-index: 0;
+}
+.ch3-08{
+    width: 81.97368421052632%;
+    height: 26.81704260651629%;
+    left: 9.06686883223684%;
+    top: 6.748479271094404%;
+    z-index: 0;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+.ch3-09{
+    width: 108.02631578947368%;
+    height: 32.49791144527986%;
+    left: -7.236842105263158%;
+    top: 67.50208855472013%;
+    z-index: 0;
+}
+.ch3-10{
+    width: 60.26315789473684%;
+    height: 36.84210526315789%;
+    left: 16.18421052631579%;
+    top: 50.9607351712615%;
+    z-index: 0;
+}
+/*slide4*/
+.slide4 .ch4-01{
+    width:100%;
+    height:100%;
+}
+.slide4 .ch4-01 img{
+    width: 180%;
+    height: 100%;
+    margin-left: -40%;
+}
+.slide4 .text,.slide5 .text{
+    color:#fff;
+    font-size:18px;
+    width: 56.25%;
+    height: auto;
+    left: 21.005088404605274%;
+    top: 65.30952380952381%;
+    z-index: 1;
+}
+/*slide5*/
+.slide5 p{
+    width:100%;
+    text-align: center;
+}
+.slide5 .text1{
+    top:5%;
+}
+.slide5 .text2{
+    top:25%;
+    color:mediumspringgreen;
+}
+.slide5 .text3{
+    top:45%;
+    color:deeppink;
+}
+.slide5 .text4{
+    top:65%;
+    color:darkorange;
+}
+
+@keyframes fadeInOut {
+    0%{opacity: 0;}
+    33%{opacity:.4;}
+    66%{opacity:.7;}
+    100%{opacity: 0;}
+}
+@-webkit-keyframes fadeInOut {
+    0%{opacity: 0;}
+    33%{opacity:.4;}
+    66%{opacity:.7;}
+    100%{opacity: 0;}
+}
+.fadeInOut{
+    animation-name:fadeInOut ;
+    -webkit-animation-name:fadeInOut ;
+    animation-timing-function: linear;
+    -webkit-animation-timing-function: linear;
+}
+
+.swiper-slide:after {
+    content: '';
+    position: absolute;
+    z-index:999;
+    left: 0;
+    right: 0;
+    bottom: .3rem;
+    margin: 0 auto;
+    width: .20rem;
+    height: .14rem;
+    background: url(../imgs/up.png) no-repeat;
+    background-size: contain;
+    animation: arrowUpAndDown 2.0s ease infinite;
+    -webkit-animation: arrowUpAndDown 2.0s ease infinite;
+}
+@keyframes arrowUpAndDown {
+    0%{bottom:.10rem;opacity:1;}
+    70% { bottom:.30rem;}
+    100% { bottom:.30rem;opacity:0;}
+}
+@-webkit-keyframes arrowUpAndDown {
+    0%{bottom:.10rem;opacity:1;}
+    70% { bottom:.30rem;}
+    100% { bottom:.30rem;opacity:0;}
+}
+@keyframes rotate720 {
+    0%{transform: rotate(0deg);-webkit-transform: rotate(0deg);opacity:0;}
+    100% { transform: rotate(720deg);-webkit-transform: rotate(720deg);opacity:1;}
+}
+@-webkit-keyframes rotate720 {
+    0%{transform: rotate(0deg);-webkit-transform: rotate(0deg);opacity:0;}
+    100% { transform: rotate(720deg);-webkit-transform: rotate(720deg);opacity:1;}
+}
+.rotate720{
+    animation-name: rotate720;
+    -webkit-animation-name:rotate720 ;
+}
